@@ -15,7 +15,7 @@ const monthNames = ["January", "February", "March", "April", "May", "June",
 currentmonth = monthNames[currentDate .getMonth()];
 
 console.log(currentDate.getDate() + '/' + (currentDate .getMonth()+1) + '/' + currentDate .getFullYear())
-Get Time in AM and PM-
+// Get Time in AM and PM-
 var h =  currentDate.getHours(), m =currentDate.getMinutes();
 var _time = (h > 12) ? (h-12 + ':' + m +' PM') : (h + ':' + m +' AM');
 console.log(_time)

@@ -20,7 +20,14 @@ I'm Sam, and I'm passionate about product engineering and web development. I cre
 
 
 ### About the app
-JS interview questions
+TS/JS interview questions. You can use these concepts anywhere in programming frontend, backend.
+
+### Repo url
+https://github.com/sunny7899/js-questions.git
+
+### Project Run
+For JS files - node filename.js
+For TS files - tsc filename.js -> will transpile ts file to js
 
 ## Subscribe and Stay Updated!
 

@@ -3,7 +3,8 @@
 var message, x;
 message = document.getElementById("message");
 message.innerHTML = "";
-x = (<HTMLInputElement>document.getElementById("demo")).value;
+{/* <HTMLInputElement></HTMLInputElement> */}
+x = (document.getElementById("demo")).value;
 try {
 if (x == "") throw "empty";
 if (isNaN(x)) throw "not a number"; // isNan() function returns true if the variable value is not a number.
@@ -17,7 +18,8 @@ message.innerHTML = "Input is " + err; //err is the throw message
 finally {
 document.getElementById("demo").value = "";
 }
-function MyError(message?) {
+// ? used in TS code
+function MyError(message) {
 this.name = 'CustomError';
 this.message = message || 'Error raised with default message';
 }
@@ -73,36 +75,36 @@ this.message = message
 }
 }
 
-Here super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods. This comes under the inheritance.
+// Here super keyword refers to the parent class. It is used to call the constructor of the parent class and to access the parent's properties and methods. This comes under the inheritance.
 
-In the Angular project, we can do error handling using catchError method-
+// In the Angular project, we can do error handling using catchError method-
 
-request() {
-const url = 'GoalTree/GetById/';
-this.http.get(url)
-.pipe(
-map((data: any) => {
-this.showError = false;
-console.log('data1', data);
-}),
-catchError((error: HttpErrorResponse) => {
-console.log('error', error);
+// request() {
+// const url = 'GoalTree/GetById/';
+// this.http.get(url)
+// .pipe(
+// map((data: any) => {
+// this.showError = false;
+// console.log('data1', data);
+// }),
+// catchError((error: HttpErrorResponse) => {
+// console.log('error', error);
 
-if (error.status === 401) {
-this.showError = true;
-this.error = error.message;
-return this.error;
-}
-this.showError = true;
-this.error = error.message;
-return this.error
-}))
-.subscribe(data => {
-console.log('data2', data);
-})
-}
+// if (error.status === 401) {
+// this.showError = true;
+// this.error = error.message;
+// return this.error;
+// }
+// this.showError = true;
+// this.error = error.message;
+// return this.error
+// }))
+// .subscribe(data => {
+// console.log('data2', data);
+// })
+// }
 
-We can also make a separate method to handle error-
+// We can also make a separate method to handle error-
 
 // private handleError(error: HttpErrorResponse | any) {
 // // In a real world app, you might use a remote logging infrastructure
@@ -121,13 +123,13 @@ We can also make a separate method to handle error-
 // .catch(this.handleError);
 // }
 
-private extractData(res: Response) {
-let body = res.json();
-console.log('extracting data');
-return body ;
-}
+// private extractData(res: Response) {
+// let body = res.json();
+// console.log('extracting data');
+// return body ;
+// }
 
-API handling:
+// API handling:
 
 async function myFetch() {
 try {

@@ -17,11 +17,11 @@ console.log(shape.perimeter()); // NaN
  function func() { console.log("User4") } 
  func(); 
 
- const fnc=(function(a) { 
-  delete a; 
-  return a;
- })(7); 
- console.log(fnc) 
+//  const fnc=(function(a) { 
+//   delete a; 
+//   return a;
+//  })(7); 
+//  console.log(fnc) 
 
  for (var i = 0; i < 3; i++) { 
   setTimeout(() => console.log(i), 1);
@@ -31,13 +31,13 @@ var a=5 , b=1
 
 var obj = { a : 10 }
 
-with(obj)
+// with(obj)
 
-{
+// {
 
-console.log(b)
+// console.log(b)
 
-}
+// }
 
   
 

@@ -74,13 +74,13 @@ y += typeof F;
 }
 console.log(y); // 1undefined
 
-var Output = (function(x)
-{
-delete X;
-return X;
-}
-)(0);
-console.log(output);//0
+// var Output = (function(x)
+// {
+// delete X;
+// return X;
+// }
+// )(0);
+// console.log(output);//0
 
 var X = { Foo : 1};
 var Output = (function()
@@ -137,25 +137,25 @@ const shape = {
     greeting = {};
     console.log(greeting); // {}
 
-    function checkAge(data) {
+    // function checkAge(data) {
 
-          if (data === { age: 18 }) {
+    //       if (data === { age: 18 }) {
         
-            console.log('You are an adult!');
+    //         console.log('You are an adult!');
         
-          } else if (data == { age: 18 }) {
+    //       } else if (data == { age: 18 }) {
         
-            console.log('You are still an adult.');
+    //         console.log('You are still an adult.');
         
-          } else {
+    //       } else {
         
-            console.log(`Hmm.. You don't have an age I guess`);
+    //         console.log(`Hmm.. You don't have an age I guess`);
         
-          }
+    //       }
         
-        }
+    //     }
         
-        checkAge({ age: 18 });
+    //     checkAge({ age: 18 });
         
         let person = { name: 'Lydia' };
         

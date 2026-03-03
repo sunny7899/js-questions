@@ -38,11 +38,11 @@
 - Objects
 - Prototypical Inheritance -> ES6 Class
 - Callbacks and Promises
-A callback function is called after a given task. It allows other code to be run in the meantime and prevents any blocking
 - Regular Expressions
 - Error handling (promise.then(...).catch(...), try { } catch(e) { })
 - JavaScript ES6 and beyond
 - variable hoisting, Hoisting
+
 - Memoization - way to speed up performance by reducing computations. there are two ways that you can implement memoization: Implicit Caching, Decorator Functions.
 When you use memoization, you want to implement .clear() method to manage your application's resources and performance. Here's why:
 Memory management: It frees up resources by allowing you to manually purge the cache.
@@ -68,6 +68,7 @@ Preventing component rendering: In frontend frameworks like React, memoization c
 - shallow and deep copy
 - polyfills
 - recursive problems - flatten object
+
 - How Event loop works - how heap works  -> event loop handles the recursion, not the call stack
 The Event Loop processes simple requests (non-blocking operations), such as I/O Polling, and returns the responses to the corresponding clients
 A single thread from the Thread Pool is assigned to a single complex request. This thread is responsible for completing a particular blocking request by accessing external resources, such as computation, database, file system, etc.
@@ -97,6 +98,12 @@ Event loops handle asynchronous callbacks in Node.js. It is the foundation of th
 - Event Bubbling and Capturing
 - Static method
 - Method decorators
-- events - keydown, keyup , focus, blur, click "keydown", "textInput" , mouse(“mousewheel”, "mouseup", "click", "mousemove", "mouseout", " mousedown ", mouseenter, mouseleave), Touch ("touchstart", "touchmove", "touchend", "touchcancel"), control/form ()"reset", "scroll", "zoom", "blur", "select", "submit"), Document/Window Events(resize, scroll, DOMContentLoaded), unload, input
 
-<https://www.jsv9000.app/>
+- events 
+- keydown, keyup , focus, blur, click, keydown, textInput , 
+- mouse(mousewheel, mouseup, click, mousemove, mouseout,  mousedown , mouseenter, mouseleave)
+- Touch (touchstart, touchmove, touchend, touchcancel), 
+- control/form (reset, scroll, zoom, blur, select, submit), 
+- Document/Window Events(resize, scroll, DOMContentLoaded), unload, input
+
+[JavaScript Visualizer](https://www.jsv9000.app/)

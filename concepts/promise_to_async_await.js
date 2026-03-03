@@ -8,7 +8,6 @@ function asyncTask() {
         .then((valueC) => functionD(valueC))
         .catch((err) => logger.error(err))
 }
-Answer:
 
 async function asyncTask() {
     try {

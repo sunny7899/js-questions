@@ -1,5 +1,5 @@
 function CallFunction(id) {
-    alert("Double clicked");
+    console.log("Double clicked");
     }
 
     function CallFunction1(id) {
@@ -27,7 +27,7 @@ console.log(pressed,'fd'); //["g"]
 
  // This event is triggered on mouse right-click.
 window.oncontextmenu = function () {
-// alert('disable right click of screen)
+// console.log('disable right click of screen)
 return false;
 }
 
@@ -45,6 +45,6 @@ function GotFocus(id) {
             }
 
             function CallFunction5() {
-                alert("Navigating the page.");
+                console.log("Navigating the page.");
                 }
 

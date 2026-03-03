@@ -23,7 +23,7 @@ nextValue = iterator.next())
 
 
 [ ...'hi' ]; // // ['h', 'i']
- for (let char of "demo") {  // triggers 4 times: once for each character  console.log( char ); // d, then e, then m, then o}
+ for (let char of "demo")   // triggers 4 times: once for each character  console.log( char ); // d, then e, then m, then o}
 
 [ ...new Set([1,2,3]) ]; // [1,2,3]
 

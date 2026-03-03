@@ -34,7 +34,7 @@ s+= sampleStr[strLength];
 }
 return s;
 }
-console.log(reverseString(name
+console.log(reverseString(name))
    
     function reverseString(str) {
         if (str === "")
@@ -46,7 +46,7 @@ console.log(reverseString(name
 
 
 "hello".substr(1); // "ello"
-The charAt() method returns the specified character from a string.
+// The charAt() method returns the specified character from a string.
 "hello".charAt(0); // "h"
 function reverseStr(str) {
 return (str === '') ? '' : reverseStr(str.substr(1)) + str.charAt(0);

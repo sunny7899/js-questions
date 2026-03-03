@@ -1,16 +1,16 @@
-querySelector("div.caption").
+document.querySelector("div.caption");
 
-querySelector("h1").textContent
+document.querySelector("h1").textContent;
 
 document.querySelector("div > p");
 
 document.querySelector("a[target]");
 
-querySelector("a").click();
+document.querySelector("a").click();
 
 document.querySelector("#demo").innerHTML
 
-querySelector("h2, h3").style.backgroundColor = "red";
+document.querySelector("h2, h3").style.backgroundColor = "red";
 
 console.log(document.getElementById("myHeading").className)
 

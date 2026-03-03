@@ -1,5 +1,5 @@
-Example-
-Script.js
+// Example-
+// Script.js
 var link = "http://www.steadyadvice.net/t.html?stack=hello&pop=data&link=hello";
 var extractParameter= new URL(link);
 var final = extractParameter.searchParams.get("link");
@@ -13,7 +13,7 @@ var query_paramter = urlLink.split("?")[1];
 console.log(query_paramter);
 
 // The third is by using the regular expression-
-Example-
+// Example-
 function getUrlVars( name, link ) {
 if (!link) link = location.href;
 name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
