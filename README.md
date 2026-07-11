@@ -29,6 +29,11 @@ https://github.com/sunny7899/js-questions.git
 For JS files - node filename.js
 For TS files - tsc filename.js -> will transpile ts file to js
 
+npx tsc --version
+npm install -g typescript
+tsc -v
+npm list -g --depth 0
+
 ## Subscribe and Stay Updated!
 
 Don't miss out on new videos! Subscribe to my channel and hit the notification bell 🔔 to receive updates whenever I upload fresh content. Let's learn, laugh, and explore together!
